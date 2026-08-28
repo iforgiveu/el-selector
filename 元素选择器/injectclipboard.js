@@ -5,7 +5,7 @@ window.ela=document.querySelectorAll.bind(document)
 document.addEventListener('__picker-store-el0', function (e) {
     // composedPath()[0] 拿到原始目标（Shadow DOM 内的元素也不会被重定向到 host）
     const el = (e.composedPath && e.composedPath()[0]) || e.target;
-    window.el0 = el;          // 也可以改成 window.tempelsss(el)，效果一样
+    window.el0 = el;         
     showNotification('已存入主世界window.el0','success');
 	console.log('已存入主世界 window.el0', el);
 });
